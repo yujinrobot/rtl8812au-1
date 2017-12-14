@@ -1,0 +1,5 @@
+dkms how to:
+copy cloned along linux-headers (/usr/src)
+sudo dkms add -m rlt8812auyujin -v 5.1.3 
+sudo dkms build -m rlt8812auyujin -v 5.1.3
+sudo dkms install -m rlt8812auyujin -v 5.1.3
