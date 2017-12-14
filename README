@@ -1,5 +1,14 @@
 dkms how to:
-copy cloned along linux-headers (/usr/src)
+copy cloned along linux-headers (/usr/src) 
+with following name rlt8812auyujin-5.1.3
+
 sudo dkms add -m rlt8812auyujin -v 5.1.3 
 sudo dkms build -m rlt8812auyujin -v 5.1.3
-sudo dkms install -m rlt8812auyujin -v 5.1.3
+sudo dkms install -m rlt8812auyujin -v 5.1.3 (for testing purpose, not mandatory)
+
+
+sudo dkms mkdsc -m rlt8812auyujin -v 5.1.3 --source-only
+sudo dkms mkdeb -m rlt8812auyujin -v 5.1.3 --source-only
+
+deb is in /var/lib/dkms/rtl8812auyujin/5.1.3/deb/YOURDEBFILE
+
